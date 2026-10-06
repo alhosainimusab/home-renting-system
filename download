@@ -1,0 +1,15 @@
+# Normalise line endings (the original files were CRLF)
+* text=auto eol=lf
+
+*.html text diff=html
+*.css  text diff=css
+*.js   text
+*.mjs  text
+*.py   text diff=python
+*.md   text diff=markdown
+*.json text
+*.yml  text
+*.svg  text
+
+*.png binary
+*.jpg binary

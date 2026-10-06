@@ -1,0 +1,14 @@
+{
+  "name": "home-renting-system",
+  "version": "1.1.0",
+  "description": "Clickable front-end prototype of a home renting system, built for a System Analysis and Design course (UTHM).",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve .",
+    "mutation": "node scripts/mutation-check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

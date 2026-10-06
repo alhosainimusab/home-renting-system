@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up | HomeRent</title>
+  <meta name="description" content="HomeRent: a home renting system prototype for international renters and landlords.">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="public">
+  <main id="content" class="form-page">
+    <form id="user-form" class="card form-card" novalidate>
+      <h1 id="form-title">Sign up</h1>
+      <div class="avatar-pick">
+        <span id="avatar-preview" class="avatar avatar-lg" aria-hidden="true">?</span>
+        <div>
+          <label for="f-image">Profile picture <span class="muted">(optional, max 200 KB)</span></label>
+          <input id="f-image" name="image" type="file" accept="image/png, image/jpeg, image/webp">
+          <p class="field-error" data-for="image"></p>
+        </div>
+      </div>
+      <label for="f-username">Username</label>
+      <input id="f-username" name="username" autocomplete="username" required>
+      <p class="field-error" data-for="username"></p>
+
+      <fieldset id="usertype-field">
+        <legend>I want to</legend>
+        <label class="radio"><input type="radio" name="userType" value="renter"> Rent a place</label>
+        <label class="radio"><input type="radio" name="userType" value="landlord"> Rent out my property</label>
+        <p class="field-error" data-for="userType"></p>
+      </fieldset>
+
+      <div class="row">
+        <div><label for="f-fname">First name</label><input id="f-fname" name="fname" autocomplete="given-name" required>
+          <p class="field-error" data-for="fname"></p></div>
+        <div><label for="f-lname">Last name</label><input id="f-lname" name="lname" autocomplete="family-name" required>
+          <p class="field-error" data-for="lname"></p></div>
+      </div>
+
+      <label for="f-password">Password <span class="muted" id="pw-note"></span></label>
+      <input id="f-password" name="password" type="password" autocomplete="new-password">
+      <p class="field-help">At least 8 characters with a letter, a number and a symbol.</p>
+      <p class="field-error" data-for="password"></p>
+      <label for="f-cpassword">Confirm password</label>
+      <input id="f-cpassword" name="cpassword" type="password" autocomplete="new-password">
+      <p class="field-error" data-for="cpassword"></p>
+
+      <label for="f-email">Email address</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required>
+      <p class="field-error" data-for="email"></p>
+      <label for="f-phone">Phone number</label>
+      <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+60 12-345 6789" required>
+      <p class="field-error" data-for="phone"></p>
+
+      <div class="actions">
+        <button class="btn btn-primary" type="submit" id="submit-btn">Create account</button>
+        <a class="btn btn-ghost" id="cancel-link" href="index.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+  <script src="js/store.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages/signup.js"></script>
+</body>
+</html>

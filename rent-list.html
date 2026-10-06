@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rent list | HomeRent</title>
+  <meta name="description" content="HomeRent: a home renting system prototype for international renters and landlords.">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside id="sidebar" aria-label="Chats"></aside>
+    <main id="content">
+      <div class="page-head"><h1>My properties</h1>
+        <button type="button" class="btn btn-primary" id="add-property">Add property</button></div>
+      <p class="muted">Select a property to see its tenants and who has paid.</p>
+      <ul id="my-grid" class="grid"></ul>
+    </main>
+  </div>
+  <script src="js/store.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages/rent-list.js"></script>
+</body>
+</html>

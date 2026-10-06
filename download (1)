@@ -1,0 +1,24 @@
+# Dependencies / tooling
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.playwright/
+test-results/
+
+# Editors and OS files
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and local env
+*.log
+.env
+
+# Course paperwork: keep out of the public repo
+*.docx
+*.pdf
+report/
